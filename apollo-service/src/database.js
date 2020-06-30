@@ -30,6 +30,7 @@ async function posts({ cursor }) {
         "#cm": "comment",
       },
       ExclusiveStartKey: cursor,
+      Limit: 10,
     })
     .promise();
 

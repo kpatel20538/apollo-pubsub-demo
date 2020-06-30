@@ -1,5 +1,5 @@
 const AWS = require("aws-sdk");
-const fs = require("fs");
+// const fs = require("fs"); 
 const { backoff } = require("./src/utilty");
 
 AWS.config.update({
@@ -8,7 +8,7 @@ AWS.config.update({
 });
 
 const database = new AWS.DynamoDB();
-const documents = new AWS.DynamoDB.DocumentClient();
+// const documents = new AWS.DynamoDB.DocumentClient();
 
 (async () => {
   try {
@@ -43,6 +43,7 @@ const documents = new AWS.DynamoDB.DocumentClient();
         })
         .promise()
     );
+    /* 
     const posts = JSON.parse(
       await fs.promises.readFile("./data/documents.json", { encoding: "utf-8" })
     );
@@ -56,6 +57,7 @@ const documents = new AWS.DynamoDB.DocumentClient();
           }),
         },
       })
-      .promise();
+      .promise(); 
+    */
   } catch (err) {}
 })();
