@@ -19,6 +19,7 @@
     "graphql-redis-subscriptions": "^2.2.1",
     "graphql-subscriptions": "^1.1.0",
     "ioredis": "^4.17.3",
+    "nanoid": "^3.1.10",
     "p-retry": "^4.2.0"
   }
 }

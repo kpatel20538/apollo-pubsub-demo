@@ -14,6 +14,7 @@ const typeDefs = gql`
   }
 
   type Post {
+    id: ID
     author: String
     created: String
     comment: String
