@@ -67,7 +67,6 @@ metadata:
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
-  type: LoadBalancer
   ports:
     - name: "web"
       port: 8080

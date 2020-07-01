@@ -62,7 +62,6 @@ metadata:
     app.kubernetes.io/instance: "apollo-pubsub-demo"
     app.kubernetes.io/component: "database"
 spec:
-  type: LoadBalancer
   ports:
     - name: "db"
       port: 8000
