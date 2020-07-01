@@ -31,14 +31,14 @@ async function posts({ cursor }) {
         "#cm": "comment",
         "#id": "id",
       },
-      ExclusiveStartKey: cursor,
+      ExclusiveStartKey: cursor && JSON.parse(cursor),
       Limit: 10,
     })
     .promise();
 
   return {
     posts: data.Items,
-    nextCursor: data.LastEvaluatedKey,
+    nextCursor: JSON.stringify(data.LastEvaluatedKey),
   };
 }
 
