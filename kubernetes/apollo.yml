@@ -64,8 +64,6 @@ metadata:
   labels:
     app.kubernetes.io/instance: "apollo-pubsub-demo"
     app.kubernetes.io/component: "apollo"
-  annotations:
-    dev.okteto.com/auto-ingress: "true"
 spec:
   ports:
     - name: "web"

@@ -1,0 +1,30 @@
+{
+  "name": "next-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "docker:build": "docker build -t kpatel20538/apollo-pubsub-demo:next .",
+    "docker:push": "docker push kpatel20538/apollo-pubsub-demo:next"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.0.0-rc.10",
+    "@apollo/link-ws": "^2.0.0-beta.3",
+    "graphql": "^15.2.0",
+    "immer": "^7.0.5",
+    "next": "^9.4.4",
+    "next-with-apollo": "^5.0.1",
+    "rbx": "^2.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-flip-move": "^3.0.4",
+    "subscriptions-transport-ws": "^0.9.16",
+    "tslib": "^2.0.0"
+  }
+}
